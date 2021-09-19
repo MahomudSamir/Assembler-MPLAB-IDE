@@ -1,0 +1,249 @@
+MPASM  5.51                    PRACTICA 2.ASM   2-12-2018  23:36:26         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (LIST)
+                      00001 LIST P=PIC16F84
+                      00002 #INCLUDE <p16f84.inc>
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F84 processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2013 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00206         LIST
+Warning[205]: Found directive in column 1. (__CONFIG)
+2007   3FF1           00003 __CONFIG _CP_OFF &_WDT_OFF &_PWRTE_ON &_XT_OSC
+  00000003            00004 Status EQU 0x03
+  00000006            00005 PortB EQU 0x06
+  00000086            00006 TrisB EQU 0x86
+  0000000C            00007 Count EQU 0x0C
+  0000000D            00008 Count2 EQU 0x0D
+  0000000E            00009 Count3 EQU 0x0E
+0000                  00010         ORG 0x00
+0000   2805           00011         GOTO Main
+0005                  00012         ORG 0x05
+0005                  00013 Main
+Warning[203]: Found opcode in column 1. (BSF)
+0005   1683           00014 BSF Status,5            ;Pasa al banco 1
+Warning[203]: Found opcode in column 1. (MOVLW)
+0006   3001           00015 MOVLW B'00000001'       ;Mueve B'00000001' a W
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0007   0086           00016 MOVWF TrisB                     ;Mueve W a TrisB
+Warning[203]: Found opcode in column 1. (BCF)
+0008   1283           00017 BCF Status,5            ;Pasa al banco 0
+                      00018 
+0009                  00019 Looprb0
+Warning[203]: Found opcode in column 1. (BTFSS)
+0009   1C06           00020 BTFSS PortB,0           ;¿PortB,0 = 1?
+Warning[203]: Found opcode in column 1. (GOTO)
+000A   280C           00021 GOTO Loopoffrb1         ;No, entonces ve a Loopoffrb1
+Warning[203]: Found opcode in column 1. (GOTO)
+000B   280E           00022 GOTO Looprb1            ;Si, entonces ve a Looprb1
+                      00023 
+000C                  00024 Loopoffrb1
+Warning[203]: Found opcode in column 1. (BCF)
+000C   1086           00025 BCF PortB,1                     ;Apaga el LED
+Warning[203]: Found opcode in column 1. (GOTO)
+000D   2809           00026 GOTO Looprb0            ;Ve a Looprb0
+                      00027 
+000E                  00028 Looprb1
+Warning[203]: Found opcode in column 1. (BSF)
+000E   1486           00029 BSF PortB,1                     ;Prende el LED
+Warning[203]: Found opcode in column 1. (CALL)
+000F   2011           00030 CALL Delay                      ;Llama al ciclo Delay (5s)
+MPASM  5.51                    PRACTICA 2.ASM   2-12-2018  23:36:26         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[203]: Found opcode in column 1. (GOTO)
+0010   280C           00031 GOTO Loopoffrb1         ;Ve a Loopoffrb1
+                      00032 
+0011                  00033 Delay
+Warning[203]: Found opcode in column 1. (MOVLW)
+0011   3000           00034 MOVLW B'00000000'       ;Mueve .256 a W
+Warning[203]: Found opcode in column 1. (MOVWF)
+0012   008C           00035 MOVWF Count                     ;Mueve W a Count
+                      00036 
+Warning[207]: Found label after column 1. (Loopcount2)
+0013                  00037         Loopcount2
+0013   3000           00038         MOVLW B'00000000'       ;Mueve .256 a W
+0014   008D           00039         MOVWF Count2            ;Mueve .256 a Count2
+                      00040         
+Warning[207]: Found label after column 1. (Loopcount3)
+0015                  00041         Loopcount3
+0015   3041           00042         MOVLW B'01000001'       ;Mueve .65 a W
+0016   008E           00043         MOVWF Count3            ;Mueve W a Count3
+                      00044         
+Warning[207]: Found label after column 1. (Loopdec)
+0017                  00045         Loopdec
+Message[305]: Using default destination of 1 (file).
+0017   0B8E           00046         DECFSZ Count3           ;¿Count3 decrementó = 0?
+0018   2817           00047         GOTO Loopdec            ;No, entonces ve a Loopde
+Message[305]: Using default destination of 1 (file).
+0019   0B8D           00048         DECFSZ Count2           ;Si, entonces ¿Count2 decrementó = 0?
+001A   2815           00049         GOTO Loopcount3         ;No, entonces ve a Loopcount3
+Message[305]: Using default destination of 1 (file).
+001B   0B8C           00050         DECFSZ Count            ;Si, entonces ¿Count decrementó = 0?
+001C   2813           00051         GOTO Loopcount2         ;No, entonces ve a Loopcount2
+                      00052 
+Warning[203]: Found opcode in column 1. (RETURN)
+001D   0008           00053 RETURN
+                      00054 
+Warning[205]: Found directive in column 1. (END)
+                      00055 END
+MPASM  5.51                    PRACTICA 2.ASM   2-12-2018  23:36:26         PAGE  3
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+Count                             0000000C
+Count2                            0000000D
+Count3                            0000000E
+DC                                00000001
+Delay                             00000011
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+Loopcount2                        00000013
+Loopcount3                        00000015
+Loopdec                           00000017
+Loopoffrb1                        0000000C
+Looprb0                           00000009
+Looprb1                           0000000E
+Main                              00000005
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+PortB                             00000006
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+MPASM  5.51                    PRACTICA 2.ASM   2-12-2018  23:36:26         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+Status                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+TrisB                             00000086
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CONFIG                           00002007
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_FOSC_EXTRC                       00003FFF
+_FOSC_HS                          00003FFE
+_FOSC_LP                          00003FFC
+_FOSC_XT                          00003FFD
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDTE_OFF                         00003FFB
+MPASM  5.51                    PRACTICA 2.ASM   2-12-2018  23:36:26         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_WDTE_ON                          00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84                           00000001
+__DEBUG                           1
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : X----XXXXXXXXXXX XXXXXXXXXXXXXX-- ---------------- ----------------
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    26
+Program Memory Words Free:   998
+
+
+Errors   :     0
+Warnings :    21 reported,     0 suppressed
+Messages :     4 reported,     0 suppressed
+
+
