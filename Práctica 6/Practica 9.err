@@ -1,0 +1,7 @@
+Message[302] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 79 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 82 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 83 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 84 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 85 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 118 : Found label after column 1. (REGRESA_MENU)
+Warning[207] C:\USERS\SAMIR\DOCUMENTS\MPLAB\MICROPROCESADORES\PR·CTICA 6\PRACTICA 9.ASM 500 : Found label after column 1. (ASIGNA_VALORES_ADMIN)

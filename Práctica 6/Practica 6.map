@@ -1,0 +1,52 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Thu Mar 29 23:04:37 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000005    program   0x000050
+.config_2007_PRACTICA 6.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000005    0x00002c      
+                            0x002007    0x002007      
+            42 out of 1093 program addresses used, program memory utilization is 3%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    Delay   0x000020    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+               Loopcount2   0x000022    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+               Loopcount3   0x000024    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                  Loopdec   0x000026    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+             Loopoffportb   0x00000f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                Loopportb   0x000013    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                  Loopra0   0x00000c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+           Loopresetportb   0x00001c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                     Main   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                  Loopra0   0x00000c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+             Loopoffportb   0x00000f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                Loopportb   0x000013    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+           Loopresetportb   0x00001c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                    Delay   0x000020    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+               Loopcount2   0x000022    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+               Loopcount3   0x000024    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+                  Loopdec   0x000026    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 6\Practica 6.asm
+
+
