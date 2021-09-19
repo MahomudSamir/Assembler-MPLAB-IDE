@@ -1,0 +1,244 @@
+MPASM  5.51                    PRACTICA 2.ASM   2-11-2018  20:17:57         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (List)
+                      00001 List P=PIC16F84
+                      00002 #INCLUDE <p16f84.inc>
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F84 processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2013 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00206         LIST
+Warning[205]: Found directive in column 1. (__CONFIG)
+2007   3FF1           00003 __CONFIG _CP_OFF &_WDT_OFF &_PWRTE_ON &_XT_OSC
+  00000003            00004 Status EQU 0x03
+  00000006            00005 PortB EQU 0x06
+  00000086            00006 TrisB EQU 0x86
+  0000000C            00007 Count EQU 0x0C
+  0000000D            00008 Count2 EQU 0x0D
+  0000000E            00009 Count3 EQU 0x0E
+                      00010         ORG 0x00
+0000   2???           00011         GOTO Main
+                      00012         ORG 0x05
+0005                  00013 Main
+Warning[203]: Found opcode in column 1. (BSF)
+0005   1683           00014 BSF Status,5
+Warning[203]: Found opcode in column 1. (MOVLW)
+0006   3001           00015 MOVLW B'00000001'
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0007   0086           00016 MOVWF TrisB
+Warning[203]: Found opcode in column 1. (BCF)
+0008   1283           00017 BCF Status,5
+                      00018 
+0009                  00019 Loopoffrb1
+Warning[203]: Found opcode in column 1. (BCF)
+0009   1086           00020 BCF PortB,1
+                      00021 
+000A                  00022 Looprb0
+Warning[203]: Found opcode in column 1. (BTFSS)
+000A   1C06           00023 BTFSS PortB,0
+Warning[203]: Found opcode in column 1. (GOTO)
+000B   2???           00024 GOTO Looprb0
+Warning[203]: Found opcode in column 1. (GOTO)
+000C   2???           00025 GOTO Looprb1
+                      00026 
+000D                  00027 Looprb1
+Warning[203]: Found opcode in column 1. (BSF)
+000D   1486           00028 BSF PortB,1
+Warning[203]: Found opcode in column 1. (CALL)
+000E   2???           00029 CALL Delay
+Warning[203]: Found opcode in column 1. (GOTO)
+000F   2???           00030 GOTO Loopoffrb1
+MPASM  5.51                    PRACTICA 2.ASM   2-11-2018  20:17:57         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00031 
+0010                  00032 Delay
+Warning[203]: Found opcode in column 1. (MOVLW)
+0010   3000           00033 MOVLW B'00000000'
+Warning[203]: Found opcode in column 1. (MOVWF)
+Error[108]  : Illegal character (,)
+0011   0080           00034 MOVWF Count,1
+                      00035 
+0012                  00036 Loopcount2
+Warning[203]: Found opcode in column 1. (MOVLW)
+0012   3000           00037 MOVLW B'00000000'
+Warning[203]: Found opcode in column 1. (MOVWF)
+Error[108]  : Illegal character (,)
+0013   0080           00038 MOVWF Count2,1
+                      00039         
+0014                  00040 Loopcount3
+Warning[203]: Found opcode in column 1. (MOVLW)
+0014   300E           00041 MOVLW B'00001110'
+Warning[203]: Found opcode in column 1. (MOVWF)
+Error[108]  : Illegal character (,)
+0015   0080           00042 MOVWF Count3,1
+                      00043         
+0016                  00044 Loopdec
+Warning[203]: Found opcode in column 1. (DECFSZ)
+Message[305]: Using default destination of 1 (file).
+0016   0B8E           00045 DECFSZ Count3
+Warning[203]: Found opcode in column 1. (GOTO)
+0017   2???           00046 GOTO Loopdec
+Warning[203]: Found opcode in column 1. (DECFSZ)
+Message[305]: Using default destination of 1 (file).
+0018   0B8D           00047 DECFSZ Count2
+Warning[203]: Found opcode in column 1. (GOTO)
+0019   2???           00048 GOTO Loopcount3
+Warning[203]: Found opcode in column 1. (DECFSZ)
+Message[305]: Using default destination of 1 (file).
+001A   0B8C           00049 DECFSZ Count
+Warning[203]: Found opcode in column 1. (GOTO)
+001B   2???           00050 GOTO Loopcount2
+Warning[203]: Found opcode in column 1. (Return)
+001C   0008           00051 Return
+                      00052 
+Warning[205]: Found directive in column 1. (END)
+3FF1                  00053 END
+MPASM  5.51                    PRACTICA 2.ASM   2-11-2018  20:17:57         PAGE  3
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+Count                             0000000C
+Count2                            0000000D
+Count3                            0000000E
+DC                                00000001
+Delay                             00000010
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+Loopcount2                        00000012
+Loopcount3                        00000014
+Loopdec                           00000016
+Loopoffrb1                        00000009
+Looprb0                           0000000A
+Looprb1                           0000000D
+Main                              00000005
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+PortB                             00000006
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+MPASM  5.51                    PRACTICA 2.ASM   2-11-2018  20:17:57         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+Status                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+TrisB                             00000086
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CONFIG                           00002007
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_FOSC_EXTRC                       00003FFF
+_FOSC_HS                          00003FFE
+_FOSC_LP                          00003FFC
+_FOSC_XT                          00003FFD
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDTE_OFF                         00003FFB
+MPASM  5.51                    PRACTICA 2.ASM   2-11-2018  20:17:57         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_WDTE_ON                          00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84                           00000001
+__DEBUG                           1
+
+Errors   :     3
+Warnings :    27 reported,     0 suppressed
+Messages :     4 reported,     0 suppressed
+
+
