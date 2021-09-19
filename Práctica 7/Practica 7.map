@@ -1,0 +1,44 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Thu Mar 29 23:08:26 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000005    program   0x000038
+.config_2007_PRACTICA 7.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000005    0x000020      
+                            0x002007    0x002007      
+            30 out of 1093 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               Loopoffra3   0x00000f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                  Loopra3   0x00000c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                 Loopread   0x000012    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                     Main   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                    Table   0x000017    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                  Loopra3   0x00000c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+               Loopoffra3   0x00000f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                 Loopread   0x000012    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+                    Table   0x000017    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 7\Practica 7.asm
+
+
