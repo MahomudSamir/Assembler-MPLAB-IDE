@@ -1,0 +1,270 @@
+MPASM  5.51                    PRACTICA 4.ASM   2-14-2018  18:09:00         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (LIST)
+                      00001 LIST P=PIC16F84
+                      00002 #INCLUDE <p16f84.inc>
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F84 processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2013 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00206         LIST
+Warning[205]: Found directive in column 1. (__CONFIG)
+2007   3FF1           00003 __CONFIG _CP_OFF &_WDT_OFF &_PWRTE_ON &_XT_OSC
+  00000003            00004 Status EQU 0x03
+  00000005            00005 PortA EQU 0x05
+  00000085            00006 TrisA EQU 0x85
+  00000006            00007 PortB EQU 0x06
+  00000086            00008 TrisB EQU 0x86
+0000                  00009         ORG 0x00
+0000   2805           00010         GOTO Main
+0005                  00011         ORG 0x05
+0005                  00012 Main
+Warning[203]: Found opcode in column 1. (BSF)
+0005   1683           00013 BSF Status,5            ;Pasa al banco 1
+Warning[203]: Found opcode in column 1. (MOVLW)
+0006   301F           00014 MOVLW B'00011111'       ;Mueve B'00011111' a W
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0007   0085           00015 MOVWF TrisA                     ;Mueve W a TrisA
+Warning[203]: Found opcode in column 1. (MOVLW)
+0008   3000           00016 MOVLW B'00000000'       ;Mueve B'00000000' a W
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0009   0086           00017 MOVWF TrisB                     ;Mueve W a TrisB
+Warning[203]: Found opcode in column 1. (BCF)
+000A   1283           00018 BCF Status,5            ;Pasa al banco 0
+                      00019 
+000B                  00020 Loopra4
+Warning[203]: Found opcode in column 1. (BTFSS)
+000B   1E05           00021 BTFSS PortA,4           ;¿PortA,4 = 1?
+Warning[203]: Found opcode in column 1. (GOTO)
+000C   280E           00022 GOTO Loopoffra4         ;No, entonces ve a Loopoffra4
+Warning[203]: Found opcode in column 1. (GOTO)
+000D   2811           00023 GOTO Loopread           ;Si, entonces ve a Loopread
+                      00024 
+000E                  00025 Loopoffra4
+Warning[203]: Found opcode in column 1. (MOVLW)
+000E   307F           00026 MOVLW B'01111111'       ;Mueve B'01111111' a W
+Warning[203]: Found opcode in column 1. (MOVWF)
+000F   0086           00027 MOVWF PortB                     ;Prende el Display
+Warning[203]: Found opcode in column 1. (GOTO)
+0010   280B           00028 GOTO Loopra4            ;Ve a Loopra4
+MPASM  5.51                    PRACTICA 4.ASM   2-14-2018  18:09:00         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00029 
+0011                  00030 Loopread
+Warning[203]: Found opcode in column 1. (MOVF)
+0011   0805           00031 MOVF PortA,0            ;Mueve PortA a W
+Warning[203]: Found opcode in column 1. (ANDLW)
+0012   390F           00032 ANDLW B'00001111'       ;Aplica W (AND) B'00001111'
+Warning[203]: Found opcode in column 1. (CALL)
+0013   2016           00033 CALL Table                      ;Llama al ciclo Table
+Warning[203]: Found opcode in column 1. (MOVWF)
+0014   0086           00034 MOVWF PortB                     ;Mueve W a PortB
+Warning[203]: Found opcode in column 1. (GOTO)
+0015   280B           00035 GOTO Loopra4            ;Ve a Loopra4
+                      00036 
+0016                  00037 Table
+Warning[203]: Found opcode in column 1. (ADDWF)
+Message[305]: Using default destination of 1 (file).
+0016   0782           00038 ADDWF PCL                       ;PCL Tendra el valor de W
+Warning[203]: Found opcode in column 1. (RETLW)
+0017   3477           00039 RETLW B'01110111'       ;Retorna si PCL = .0
+Warning[203]: Found opcode in column 1. (RETLW)
+0018   347C           00040 RETLW B'01111100'       ;Retorna si PCL = .1
+Warning[203]: Found opcode in column 1. (RETLW)
+0019   3461           00041 RETLW B'01100001'       ;Retorna si PCL = .2
+Warning[203]: Found opcode in column 1. (RETLW)
+001A   345E           00042 RETLW B'01011110'       ;Retorna si PCL = .3
+Warning[203]: Found opcode in column 1. (RETLW)
+001B   3479           00043 RETLW B'01111001'       ;Retorna si PCL = .4
+Warning[203]: Found opcode in column 1. (RETLW)
+001C   3471           00044 RETLW B'01110001'       ;Retorna si PCL = .5
+Warning[203]: Found opcode in column 1. (RETLW)
+001D   346F           00045 RETLW B'01101111'       ;Retorna si PCL = .6
+Warning[203]: Found opcode in column 1. (RETLW)
+001E   3476           00046 RETLW B'01110110'       ;Retorna si PCL = .7
+Warning[203]: Found opcode in column 1. (RETLW)
+001F   3406           00047 RETLW B'00000110'       ;Retorna si PCL = .8
+Warning[203]: Found opcode in column 1. (RETLW)
+0020   340F           00048 RETLW B'00001111'       ;Retorna si PCL = .9
+Warning[203]: Found opcode in column 1. (RETLW)
+0021   3440           00049 RETLW B'01000000'       ;Retorna si PCL = .10
+Warning[203]: Found opcode in column 1. (RETLW)
+0022   3438           00050 RETLW B'00111000'       ;Retorna si PCL = .11
+Warning[203]: Found opcode in column 1. (RETLW)
+0023   3437           00051 RETLW B'00110111'       ;Retorna si PCL = .12
+Warning[203]: Found opcode in column 1. (RETLW)
+0024   3423           00052 RETLW B'00100011'       ;Retorna si PCL = .13
+Warning[203]: Found opcode in column 1. (RETLW)
+0025   3463           00053 RETLW B'01100011'       ;Retorna si PCL = .14
+Warning[203]: Found opcode in column 1. (RETLW)
+0026   3473           00054 RETLW B'01110011'       ;Retorna si PCL = .15
+                      00055 
+Warning[203]: Found opcode in column 1. (RETURN)
+0027   0008           00056 RETURN
+                      00057 
+MPASM  5.51                    PRACTICA 4.ASM   2-14-2018  18:09:00         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (END)
+                      00058 END
+MPASM  5.51                    PRACTICA 4.ASM   2-14-2018  18:09:00         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+DC                                00000001
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+Loopoffra4                        0000000E
+Loopra4                           0000000B
+Loopread                          00000011
+Main                              00000005
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+PortA                             00000005
+PortB                             00000006
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+MPASM  5.51                    PRACTICA 4.ASM   2-14-2018  18:09:00         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+STATUS                            00000003
+Status                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+Table                             00000016
+TrisA                             00000085
+TrisB                             00000086
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CONFIG                           00002007
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_FOSC_EXTRC                       00003FFF
+_FOSC_HS                          00003FFE
+_FOSC_LP                          00003FFC
+_FOSC_XT                          00003FFD
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDTE_OFF                         00003FFB
+_WDTE_ON                          00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+MPASM  5.51                    PRACTICA 4.ASM   2-14-2018  18:09:00         PAGE  6
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__16F84                           00000001
+__DEBUG                           1
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : X----XXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXX-------- ----------------
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    36
+Program Memory Words Free:   988
+
+
+Errors   :     0
+Warnings :    38 reported,     0 suppressed
+Messages :     3 reported,     0 suppressed
+
+
