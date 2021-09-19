@@ -1,0 +1,196 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Sun Apr 08 18:46:15 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000005    program   0x00095c
+.config_2007_PRACTICA 9.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000005    0x0004b2      
+                            0x002007    0x002007      
+            1200 out of 8454 program addresses used, program memory utilization is 14%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                       AA   0x00048f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 ADELANTE   0x0002a5    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    ADMIN   0x00003c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         ASIGNA_VALORES_1   0x000120    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         ASIGNA_VALORES_2   0x000129    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     ASIGNA_VALORES_ADMIN   0x000132    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       BB   0x000495    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 BLOQUEAR   0x000326    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         CAMBIO_VALORES_1   0x0003d9    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         CAMBIO_VALORES_2   0x0003e2    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     CAMBIO_VALORES_ADMIN   0x0003d0    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       CC   0x00049b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     CERO   0x000413    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  CHK_COL   0x0000f7    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    CINCO   0x000458    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  COMANDO   0x0000de    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+              COMANDOMENU   0x0000c2    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+        COMANDOMENUBRINCO   0x0000bb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+            COMPARA_ADMIN   0x000390    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       COMPARA_CONTRASEÑA   0x000384    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+           COMPARA_USER_1   0x0003a5    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+           COMPARA_USER_2   0x0003ba    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      CONTRASEÑA_CORRECTA   0x000299    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+    CONTRASEÑA_INCORRECTA   0x00028d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+               CONV_TECLA   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                   CUATRO   0x00044d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       DD   0x0004a1    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    DELAY   0x0000e9    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                DELAYMENU   0x0000c6    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_0   0x0003eb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_1   0x0003ef    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_2   0x0003f3    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_3   0x0003f7    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_4   0x0003fb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_5   0x0003ff    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_6   0x000403    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_7   0x000407    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_8   0x00040b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_9   0x00040f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                      DOS   0x000431    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       EE   0x0004a7    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    ENVIA   0x0000db    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+              ENVIABRINCO   0x0000b8    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                ENVIAMENU   0x0000bf    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera1   0x00010a    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera2   0x00010c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera3   0x00010e    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera4   0x000110    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       FF   0x0004ad    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+               INCORRECTA   0x0002e4    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+               INICIA_LCD   0x0000cf    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                   INICIO   0x000017    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                   LINEA2   0x0000e4    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     MENU   0x000064    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 NEW_SCAN   0x0000f2    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 NEXT_COL   0x000107    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    NUEVE   0x000484    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     OCHO   0x000479    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER1_CAMBIO   0x0001d5    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     OPCION_USER1_CAMBIO2   0x0001d8    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER1_TECLEA   0x00022d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER2_CAMBIO   0x000201    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     OPCION_USER2_CAMBIO2   0x000204    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER2_TECLEA   0x00025d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+            OPCION_USER_1   0x00013b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+            OPCION_USER_2   0x000188    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+             REGRESA_MENU   0x00003b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       REGRESO_ASIGNACION   0x000112    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       REGRESO_CONV_TECLA   0x000114    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     SEIS   0x000463    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    SIETE   0x00046e    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    START   0x000038    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 TECLA_ON   0x00010a    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+           TERMINO_ASIGNA   0x0003ce    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+          TERMINO_COMPARA   0x0003ce    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     TRES   0x000442    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                      UNO   0x000420    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    loop1   0x0000eb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                loop1MENU   0x0000c8    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    loop2   0x0000ed    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                loop2MENU   0x0000ca    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               CONV_TECLA   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                   INICIO   0x000017    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    START   0x000038    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+             REGRESA_MENU   0x00003b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    ADMIN   0x00003c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     MENU   0x000064    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+              ENVIABRINCO   0x0000b8    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+        COMANDOMENUBRINCO   0x0000bb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                ENVIAMENU   0x0000bf    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+              COMANDOMENU   0x0000c2    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                DELAYMENU   0x0000c6    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                loop1MENU   0x0000c8    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                loop2MENU   0x0000ca    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+               INICIA_LCD   0x0000cf    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    ENVIA   0x0000db    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  COMANDO   0x0000de    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                   LINEA2   0x0000e4    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    DELAY   0x0000e9    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    loop1   0x0000eb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    loop2   0x0000ed    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 NEW_SCAN   0x0000f2    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  CHK_COL   0x0000f7    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 NEXT_COL   0x000107    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera1   0x00010a    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 TECLA_ON   0x00010a    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera2   0x00010c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera3   0x00010e    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                  Espera4   0x000110    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       REGRESO_ASIGNACION   0x000112    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       REGRESO_CONV_TECLA   0x000114    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         ASIGNA_VALORES_1   0x000120    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         ASIGNA_VALORES_2   0x000129    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     ASIGNA_VALORES_ADMIN   0x000132    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+            OPCION_USER_1   0x00013b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+            OPCION_USER_2   0x000188    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER1_CAMBIO   0x0001d5    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     OPCION_USER1_CAMBIO2   0x0001d8    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER2_CAMBIO   0x000201    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     OPCION_USER2_CAMBIO2   0x000204    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER1_TECLEA   0x00022d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      OPCION_USER2_TECLEA   0x00025d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+    CONTRASEÑA_INCORRECTA   0x00028d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+      CONTRASEÑA_CORRECTA   0x000299    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 ADELANTE   0x0002a5    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+               INCORRECTA   0x0002e4    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                 BLOQUEAR   0x000326    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       COMPARA_CONTRASEÑA   0x000384    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+            COMPARA_ADMIN   0x000390    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+           COMPARA_USER_1   0x0003a5    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+           COMPARA_USER_2   0x0003ba    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+          TERMINO_COMPARA   0x0003ce    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+           TERMINO_ASIGNA   0x0003ce    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+     CAMBIO_VALORES_ADMIN   0x0003d0    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         CAMBIO_VALORES_1   0x0003d9    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+         CAMBIO_VALORES_2   0x0003e2    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_0   0x0003eb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_1   0x0003ef    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_2   0x0003f3    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_3   0x0003f7    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_4   0x0003fb    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_5   0x0003ff    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_6   0x000403    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_7   0x000407    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_8   0x00040b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+       DIRECCIONAMIENTO_9   0x00040f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     CERO   0x000413    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                      UNO   0x000420    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                      DOS   0x000431    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     TRES   0x000442    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                   CUATRO   0x00044d    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    CINCO   0x000458    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     SEIS   0x000463    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    SIETE   0x00046e    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                     OCHO   0x000479    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                    NUEVE   0x000484    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       AA   0x00048f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       BB   0x000495    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       CC   0x00049b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       DD   0x0004a1    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       EE   0x0004a7    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+                       FF   0x0004ad    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 9\Practica 9.asm
+
+
