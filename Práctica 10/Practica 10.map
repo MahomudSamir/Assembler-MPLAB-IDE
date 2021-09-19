@@ -1,0 +1,56 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Wed Apr 11 23:09:37 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000005    program   0x000070
+.config_2007_PRACTICA 10.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000005    0x00003c      
+                            0x002007    0x002007      
+            58 out of 1094 program addresses used, program memory utilization is 5%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                Character   0x00002c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                  Control   0x00002e    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                 DelayLCD   0x000034    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                LCD_Start   0x00000b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                     Load   0x00002f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+               Loopcount3   0x000036    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                  Loopdec   0x000038    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                     Main   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                  Restart   0x000010    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                     Show   0x000011    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                    Table   0x00001c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Main   0x000005    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                LCD_Start   0x00000b    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                  Restart   0x000010    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                     Show   0x000011    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                    Table   0x00001c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                Character   0x00002c    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                  Control   0x00002e    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                     Load   0x00002f    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                 DelayLCD   0x000034    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+               Loopcount3   0x000036    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+                  Loopdec   0x000038    program     static C:\Users\Samir\Documents\MPLAB\Microprocesadores\Práctica 10\Practica 10.asm
+
+
