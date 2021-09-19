@@ -1,0 +1,19 @@
+# MPLAB IDE generated this makefile for use with GNU make.
+# Project: Practica 3.mcp
+# Date: Mon Feb 12 16:16:23 2018
+
+AS = MPASMWIN.exe
+CC = 
+LD = mplink.exe
+AR = mplib.exe
+RM = rm
+
+Practica\ 3.cof : Practica\ 3.o
+	$(CC) /p16F84 "Practica 3.o" /u_DEBUG /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /o"Practica 3.cof" /M"Practica 3.map" /W /x
+
+Practica\ 3.o : Practica\ 3.asm ../../../../../../Program\ Files\ (x86)/Microchip/MPASM\ Suite/p16f84.inc
+	$(AS) /q /p16F84 "Practica 3.asm" /l"Practica 3.lst" /e"Practica 3.err" /d__DEBUG=1
+
+clean : 
+	$(CC) "Practica 3.o" "Practica 3.hex" "Practica 3.err" "Practica 3.lst" "Practica 3.cof"
+
